@@ -1,7 +1,7 @@
 {
   "name": "react-blog-site",
+  "description": "created with yy",
   "version": "1.0.0",
-  "description": "created with react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
