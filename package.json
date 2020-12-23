@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YasudaYu/myPortfolioSite.git"
+    "url": "git+https://github.com/YasudaYu/react-blog-site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YasudaYu/myPortfolioSite/issues"
+    "url": "https://github.com/YasudaYu/react-blog-site/issues"
   },
-  "homepage": "https://github.com/YasudaYu/myPortfolioSite#readme",
+  "homepage": "https://github.com/YasudaYu/react-blog-site#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
