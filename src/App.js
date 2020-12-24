@@ -20,7 +20,6 @@ export default function App() {
         {/* {content area} */}
         <div className="content">
           <h1>content</h1>
-          <h2></h2>
         </div>
       </div>
     </div>

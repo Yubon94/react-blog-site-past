@@ -1,15 +1,15 @@
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
   // development に設定するとソースマップ有効でJSファイルが出力される
-  mode: "production",
+  //mode: "production",
 
-//   //エントリポイント（入力ファイル）
-//   entry: "./src/index.js",
-//   //出力先
-//   output: {
-//     filename: "main.js",
-//     path: path.resolve(__dirname, "dist"),
-//   },
+  //エントリポイント（入力ファイル）
+  // entry: "./src/index.js",
+  // //出力先
+  // output: {
+  //   filename: "main.js",
+  //   path: path.resolve(__dirname, "dist")
+  // },
 
   module: {
     rules: [
