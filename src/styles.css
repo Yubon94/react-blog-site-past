@@ -2,3 +2,19 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+body{
+  margin: 0;
+}
+#container{
+  background-color: rgb(182, 228, 228);
+  margin: 0;
+}
+#menu-area{
+  background-color:rgb(202, 136, 136);
+  margin: 18px;
+}
+#content-area{
+  background-color:rgb(173, 202, 136);
+  margin: 18px;
+}
