@@ -1,15 +1,17 @@
-module.exports = {
-  // モード値を production に設定すると最適化された状態で、
-  // development に設定するとソースマップ有効でJSファイルが出力される
-  //mode: "production",
+// プラグインを利用するためにwebpackを読み込んでおく
+// const webpack = require('webpack');
 
+// output.pathに絶対パスを指定する必要があるため、pathモジュールを読み込んでおく
+const path = require('path');
+
+module.exports = {
   //エントリポイント（入力ファイル）
-  // entry: "./src/index.js",
-  // //出力先
-  // output: {
-  //   filename: "main.js",
-  //   path: path.resolve(__dirname, "dist")
-  // },
+  entry: "./src/index.js",
+  //出力先
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist")
+  },
 
   module: {
     rules: [
