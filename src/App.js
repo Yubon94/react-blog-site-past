@@ -6,9 +6,16 @@ export default function App() {
     <div className="App">
       <div id="container">
         {/* menu area */}
-        <div className="menu-box">
-          <div className="icon">icon</div>
-          <nav className="menu"></nav>
+        <div id="menu-box">
+          <div className="menu-item">
+            Profile
+          </div>
+          <div className="menu-item">
+            WORKS
+          </div>
+          <div className="menu-item">
+            SOCIAL
+          </div>
         </div>
         {/* {content area} */}
         <div className="content">
