@@ -11,10 +11,10 @@ export default function App() {
             Profile
           </div>
           <div className="menu-item">
-            WORKS
+            Works
           </div>
           <div className="menu-item">
-            SOCIAL
+            Social
           </div>
         </div>
         {/* {content area} */}
