@@ -9,7 +9,7 @@ const enabledSourceMap = MODE === "development";
 
 module.exports = {
   mode: MODE,
-  // CSSの元ソースが追跡するため, source-map方式に設定
+  // CSSの元ソースを追跡するため, source-map方式に設定
   devtool: "source-map",
 
   //エントリポイント（入力ファイル）
@@ -75,9 +75,14 @@ module.exports = {
           },
         ],
       },
-      //画像をdist内に読み込ませる
+      //画像をdist内に読み込み
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      //フォントの読み込み
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
     ],

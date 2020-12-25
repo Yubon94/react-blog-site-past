@@ -1,15 +1,23 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('./fonts/Roboto/Roboto-light.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .App {
-  font-family: sans-serif;
+  // font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  font-size: 30px;
 }
 
 body{
   margin: 0;
 }
 #container{
-  background-image: url("./images/sample.png");
+  background-image: url("./images/yellowgreen.jpg");
   background-color: rgb(182, 228, 228);
-  margin: 0;
 }
 #menu-area{
   background-color:rgb(202, 136, 136);
@@ -20,3 +28,4 @@ body{
   margin: 18px;
   transform: rotate(0deg);
 }
+
