@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import Icon from "./images/sample.png";
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
             <div className="menu-item">Works</div>
             <div className="menu-item">Social</div>
           </div>
+        </div>
+        <div>
+          <img src={Icon} />
         </div>
         {/* {content area} */}
         <div id="content-area">

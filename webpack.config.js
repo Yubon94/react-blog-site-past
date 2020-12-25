@@ -9,6 +9,8 @@ const enabledSourceMap = MODE === "development";
 
 module.exports = {
   mode: MODE,
+  // CSSの元ソースが追跡するため, source-map方式に設定
+  devtool: "source-map",
 
   //エントリポイント（入力ファイル）
   entry: "./src/index.js",
@@ -50,16 +52,13 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              // オプションでCSS内のurl()メソッドの取り込みを禁止する
-              url: true,
-              // ソースマップを有効にする
+              // develop環境ではソースマップを有効にする
               sourceMap: enabledSourceMap,
-
-              // 0 => no loaders (default);
-              // 1 => postcss-loader;
-              // 2 => postcss-loader, sass-loader
-              importLoaders: 2
             }
+          },
+          //Sass内のurl()の機能を有効化するローダー
+          {
+            loader: 'resolve-url-loader',
           },
           // Compiles Sass to CSS
           {
@@ -70,16 +69,16 @@ module.exports = {
                 fiber: false,
               },
               // ソースマップの利用有無
-              sourceMap: enabledSourceMap
+              sourceMap: true, //resolve-url-loaderを機能させるために有効化。
+              sourceMapContents: false  //コンテンツは不要なので無効化
             },
           },
         ],
       },
+      //画像をdist内に読み込ませる
       {
-        // 対象となるファイルの拡張子
-        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
-        // 画像をBase64として取り込む
-        type: "asset/inline",
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

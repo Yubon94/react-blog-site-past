@@ -2,7 +2,7 @@
   "name": "react-blog-site",
   "description": "created with yy",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
@@ -31,13 +31,13 @@
     "file-loader": "^6.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "resolve-url-loader": "^3.1.2",
     "sass": "^1.30.0",
-    "sass-loader": "^10.1.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {},
-  "private": true
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.3"
+  }
 }

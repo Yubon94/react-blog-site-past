@@ -7,6 +7,7 @@ body{
   margin: 0;
 }
 #container{
+  background-image: url("./images/sample.png");
   background-color: rgb(182, 228, 228);
   margin: 0;
 }
@@ -17,4 +18,5 @@ body{
 #content-area{
   background-color:rgb(173, 202, 136);
   margin: 18px;
+  transform: rotate(0deg);
 }
