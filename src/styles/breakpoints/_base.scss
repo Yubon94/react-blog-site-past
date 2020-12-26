@@ -1,3 +1,9 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-light.ttf") format("truetype");
@@ -15,4 +21,14 @@ body {
 #container {
   text-align: center;
   background-color: rgb(182, 228, 228);
+}
+
+#menu-area {
+  background-color: rgb(202, 136, 136);
+  margin: 18px;
+}
+#content-area {
+  background-color: rgb(173, 202, 136);
+  margin: 18px;
+  transform: rotate(0deg);
 }

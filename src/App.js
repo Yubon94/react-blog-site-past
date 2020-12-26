@@ -1,33 +1,39 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
-import { Desktop } from "./components/Desktop.jsx";
-import { Mobile } from "./components/Mobile.jsx";
+import "./styles/style.scss"
+import Icon from "./images/blue.jpg"
 
 export const App = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 1224px)",
-  });
-  const isBigScreen = useMediaQuery({ query: "(min-device-width: 1824px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const isTabletOrMobileDevice = useMediaQuery({
-    query: "(max-device-width: 1224px)",
-  });
-
-  // //モバイルデバイスが縦向きか横向きかの判定
-  // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  // //Retinaディスプレイかどうかの判定
-  // const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
-
-  return (
+  return(
     <>
-      {isDesktopOrLaptop && (
-        <>
-          {isBigScreen && <Desktop />}
-          {isTabletOrMobile && <Mobile />}
-          {isBigScreen || isTabletOrMobile || <Desktop />}
-        </>
-      )}
-      {isTabletOrMobileDevice && <Mobile />}
+      <div id="container">
+        {/* menu area */}
+        <div id="menu-area">
+          <div className="icon">icon</div>
+          <div className="menu-box">
+            <div className="menu-item">Profile</div>
+            <div className="menu-item">Works</div>
+            <div className="menu-item">Social</div>
+          </div>
+        </div>
+        <div className="imageSample">
+          <img src={Icon} />
+        </div>
+        {/* {content area} */}
+        <div id="content-area">
+          <div className="content-box">
+            <div className="content-title">Profile</div>
+            <div className="content">This is Profile area</div>
+          </div>
+          <div className="content-box">
+            <div className="content-title">Works</div>
+            <div className="content">This is Works area</div>
+          </div>
+          <div className="content-box">
+            <div className="content-title">Works</div>
+            <div className="content">This is Social area</div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
