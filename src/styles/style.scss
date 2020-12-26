@@ -1,15 +1,5 @@
 @import "./breakpoints/base";
 
-#menu-area{
-  background-color: rgb(202, 136, 136);
-  margin: 18px;
-}
-#content-area{
-  background-color: rgb(173, 202, 136);
-  margin: 18px;
-  transform: rotate(0deg);
-}
-
 @media (min-width: 480px){
   @import "./breakpoints/480up";
 }
