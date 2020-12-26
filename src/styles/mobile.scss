@@ -1,0 +1,11 @@
+@import "base.scss";
+
+#menu-area {
+  background-color: rgb(202, 198, 136);
+  margin: 18px;
+}
+#content-area {
+  background-color: rgb(136, 202, 150);
+  margin: 18px;
+  transform: rotate(0deg);
+}
