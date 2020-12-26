@@ -5,17 +5,15 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-light.ttf") format("truetype");
+  font-family: "Roboto-light";
+  src: url("../../fonts/Roboto/Roboto-light.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 body {
-  margin: 0;
-  background-image: url("../images/yellowgreen.jpg");
-  // font-family: sans-serif;
-  font-family: "Roboto", sans-serif;
+  background-image: url("../../images/yellowgreen.jpg");
+  font-family: "Roboto-light", sans-serif;
 }
 
 #container {
