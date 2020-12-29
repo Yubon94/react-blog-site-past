@@ -1,6 +1,9 @@
 import React from "react";
-import "./styles/style.scss"
-import Icon from "./images/blue.jpg"
+import "./styles/style.scss";
+import Icon from "./images/blue.jpg";
+import { Profile } from "./components/Profile.jsx";
+import { Works } from "./components/Works.jsx";
+import { Social } from "./components/Social.jsx";
 
 export const App = () => {
   return(
@@ -20,18 +23,9 @@ export const App = () => {
         </div>
         {/* {content area} */}
         <div id="content-area">
-          <div className="content-box">
-            <div className="content-title">Profile</div>
-            <div className="content">This is Profile area</div>
-          </div>
-          <div className="content-box">
-            <div className="content-title">Works</div>
-            <div className="content">This is Works area</div>
-          </div>
-          <div className="content-box">
-            <div className="content-title">Works</div>
-            <div className="content">This is Social area</div>
-          </div>
+          <Profile />
+          <Works />
+          <Social />
         </div>
       </div>
     </>

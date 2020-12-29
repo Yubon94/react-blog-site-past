@@ -15,6 +15,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./src/styles/style.scss");
 /* harmony import */ var _images_blue_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/blue.jpg */ "./src/images/blue.jpg");
+/* harmony import */ var _components_Profile_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Profile.jsx */ "./src/components/Profile.jsx");
+/* harmony import */ var _components_Works_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Works.jsx */ "./src/components/Works.jsx");
+/* harmony import */ var _components_Social_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Social.jsx */ "./src/components/Social.jsx");
+
+
+
 
 
 
@@ -39,25 +45,79 @@ var App = function App() {
     src: _images_blue_jpg__WEBPACK_IMPORTED_MODULE_2__
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "content-area"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Profile_jsx__WEBPACK_IMPORTED_MODULE_3__.Profile, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Works_jsx__WEBPACK_IMPORTED_MODULE_4__.Works, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Social_jsx__WEBPACK_IMPORTED_MODULE_5__.Social, null))));
+};
+
+/***/ }),
+
+/***/ "./src/components/Profile.jsx":
+/*!************************************!*\
+  !*** ./src/components/Profile.jsx ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Profile": function() { return /* binding */ Profile; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Profile = function Profile() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-title"
   }, "Profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content"
-  }, "This is Profile area")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "This is Profile area")));
+};
+
+/***/ }),
+
+/***/ "./src/components/Social.jsx":
+/*!***********************************!*\
+  !*** ./src/components/Social.jsx ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Social": function() { return /* binding */ Social; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Social = function Social() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "content-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "content-title"
+  }, "Social"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "content"
+  }, "This is Social area")));
+};
+
+/***/ }),
+
+/***/ "./src/components/Works.jsx":
+/*!**********************************!*\
+  !*** ./src/components/Works.jsx ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Works": function() { return /* binding */ Works; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Works = function Works() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-title"
   }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content"
-  }, "This is Works area")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content-title"
-  }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content"
-  }, "This is Social area")))));
+  }, "This is Works' area")));
 };
 
 /***/ }),
