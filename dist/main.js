@@ -14,11 +14,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./src/styles/style.scss");
-/* harmony import */ var _images_blue_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/blue.jpg */ "./src/images/blue.jpg");
-/* harmony import */ var _components_Profile_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Profile.jsx */ "./src/components/Profile.jsx");
-/* harmony import */ var _components_Works_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Works.jsx */ "./src/components/Works.jsx");
-/* harmony import */ var _components_Social_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Social.jsx */ "./src/components/Social.jsx");
-
+/* harmony import */ var _components_Profile_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Profile.jsx */ "./src/components/Profile.jsx");
+/* harmony import */ var _components_Works_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Works.jsx */ "./src/components/Works.jsx");
+/* harmony import */ var _components_Social_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Social.jsx */ "./src/components/Social.jsx");
 
 
 
@@ -33,19 +31,17 @@ var App = function App() {
     className: "icon"
   }, "icon"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "menu-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "menu-item"
-  }, "Profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "menu-item"
-  }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "menu-item"
   }, "Social"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "imageSample"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: _images_blue_jpg__WEBPACK_IMPORTED_MODULE_2__
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "landing-area"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Landing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "content-area"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Profile_jsx__WEBPACK_IMPORTED_MODULE_3__.Profile, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Works_jsx__WEBPACK_IMPORTED_MODULE_4__.Works, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Social_jsx__WEBPACK_IMPORTED_MODULE_5__.Social, null))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Profile_jsx__WEBPACK_IMPORTED_MODULE_2__.Profile, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Works_jsx__WEBPACK_IMPORTED_MODULE_3__.Works, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Social_jsx__WEBPACK_IMPORTED_MODULE_4__.Social, null))));
 };
 
 /***/ }),
@@ -64,12 +60,30 @@ __webpack_require__.r(__webpack_exports__);
 
 var Profile = function Profile() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content-box"
+    className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-title"
   }, "Profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content"
-  }, "This is Profile area")));
+    className: "item-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is introduction of me.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "Career"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my career.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "Tech Stack"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my tech stack.")))));
 };
 
 /***/ }),
@@ -88,12 +102,30 @@ __webpack_require__.r(__webpack_exports__);
 
 var Social = function Social() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content-box"
+    className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-title"
   }, "Social"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content"
-  }, "This is Social area")));
+    className: "item-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "social-icon"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my twitter.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "social-icon"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my github")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "social-icon"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my channnel of YouTube")))));
 };
 
 /***/ }),
@@ -112,12 +144,30 @@ __webpack_require__.r(__webpack_exports__);
 
 var Works = function Works() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content-box"
+    className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-title"
   }, "Works"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "content"
-  }, "This is Works' area")));
+    className: "item-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "Work 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my work 1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "Work 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my work 2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-title"
+  }, "Work 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "item-description"
+  }, "This is my work 3")))));
 };
 
 /***/ }),
@@ -155,9 +205,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _fonts_Roboto_Roboto_light_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../fonts/Roboto/Roboto-light.ttf */ "./src/fonts/Roboto/Roboto-light.ttf");
-/* harmony import */ var _images_yellowgreen_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/yellowgreen.jpg */ "./src/images/yellowgreen.jpg");
 // Imports
-
 
 
 
@@ -166,9 +214,8 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_vendors_modern_normalized_css__WEBPACK_IMPORTED_MODULE_2__.default);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(_fonts_Roboto_Roboto_light_ttf__WEBPACK_IMPORTED_MODULE_4__);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(_images_yellowgreen_jpg__WEBPACK_IMPORTED_MODULE_5__);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/******************************************************************\n\nStylesheet: ベーススタイル\n\n******************************************************************/\n@font-face {\n  font-family: \"Roboto-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n  font-weight: 600;\n  font-style: normal;\n}\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-family: \"Roboto-light\", sans-serif;\n}\n\n#container {\n  text-align: center;\n  background-color: #b6e4e4;\n}\n\n#menu-area {\n  background-color: #ca8888;\n  margin: 18px;\n}\n\n#content-area {\n  background-color: #adca88;\n  margin: 18px;\n  transform: rotate(0deg);\n}\n\n@media (min-width: 480px) {\n  /******************************************************************\n\n  Stylesheet: 480px以上(スマホの横向き)のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 600px) {\n  /******************************************************************\n\n  Stylesheet: 600px以上のタブレットやモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 960px) {\n  /******************************************************************\n\n  Stylesheet: 960px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 1280px) {\n  /******************************************************************\n\n  Stylesheet: 1280px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {\n  /******************************************************************\n\n  Stylesheet: Retinaディスプレイで適用\n\n  ******************************************************************/\n  /* \n\n  EXAMPLE \n  .icon {\n  \tbackground: url(images/test@2x.png) no-repeat;\n  \tbackground-size: 24px 24px;\n  }\n\n  */\n}\n@media print {\n  /******************************************************************\n\n  Stylesheet: プリンタのみに適用\n\n  ******************************************************************/\n}", "",{"version":3,"sources":["webpack://./style.scss","webpack://./breakpoints/_base.scss","webpack://./breakpoints/_480up.scss","webpack://./breakpoints/_600up.scss","webpack://./breakpoints/_960up.scss","webpack://./breakpoints/_1280up.scss","webpack://./breakpoints/_2x.scss","webpack://./breakpoints/_print.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;;;kEAAA;AAMA;EACE,2BAAA;EACA,+DAAA;EACA,gBAAA;EACA,kBAAA;ADEF;ACCA;EACE,yDAAA;EACA,uCAAA;ADCF;;ACEA;EACE,kBAAA;EACA,yBAAA;ADCF;;ACEA;EACE,yBAAA;EACA,YAAA;ADCF;;ACCA;EACE,yBAAA;EACA,YAAA;EACA,uBAAA;ADEF;;AA5BA;EEJA;;;;oEAAA;AFwCA;AAhCA;EGRA;;;;oEAAA;AH+CA;AAnCA;EIZA;;;;oEAAA;AJsDA;AAtCA;EKhBA;;;;oEAAA;AL6DA;AAzCA;EMpBA;;;;oEAAA;EAMA;;;;;;;;GAAA;ANuEA;AApDA;EOzBA;;;;oEAAA;APoFA","sourcesContent":["@charset \"UTF-8\";\n@import url(\"./vendors/modern-normalized.css\");\n/******************************************************************\n\nStylesheet: ベーススタイル\n\n******************************************************************/\n@font-face {\n  font-family: \"Roboto-light\";\n  src: url(\"../../fonts/Roboto/Roboto-light.ttf\") format(\"truetype\");\n  font-weight: 600;\n  font-style: normal;\n}\nbody {\n  background-image: url(\"../../images/yellowgreen.jpg\");\n  font-family: \"Roboto-light\", sans-serif;\n}\n\n#container {\n  text-align: center;\n  background-color: #b6e4e4;\n}\n\n#menu-area {\n  background-color: #ca8888;\n  margin: 18px;\n}\n\n#content-area {\n  background-color: #adca88;\n  margin: 18px;\n  transform: rotate(0deg);\n}\n\n@media (min-width: 480px) {\n  /******************************************************************\n\n  Stylesheet: 480px以上(スマホの横向き)のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 600px) {\n  /******************************************************************\n\n  Stylesheet: 600px以上のタブレットやモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 960px) {\n  /******************************************************************\n\n  Stylesheet: 960px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 1280px) {\n  /******************************************************************\n\n  Stylesheet: 1280px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {\n  /******************************************************************\n\n  Stylesheet: Retinaディスプレイで適用\n\n  ******************************************************************/\n  /* \n\n  EXAMPLE \n  .icon {\n  \tbackground: url(images/test@2x.png) no-repeat;\n  \tbackground-size: 24px 24px;\n  }\n\n  */\n}\n@media print {\n  /******************************************************************\n\n  Stylesheet: プリンタのみに適用\n\n  ******************************************************************/\n}",null,null,null,null,null,null,null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/******************************************************************\n\nStylesheet: ベーススタイル\n\n******************************************************************/\n@font-face {\n  font-family: \"Roboto-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n  font-weight: 600;\n  font-style: normal;\n}\nbody {\n  font-family: \"Roboto-light\", sans-serif;\n}\n\n#container {\n  margin: 0;\n  padding: 0;\n  text-align: center;\n  background-color: #b6e4e4;\n}\n\n#menu-area {\n  background-color: #ca8888;\n}\n\n#landing-area {\n  height: 100vh;\n  font-size: 100px;\n}\n\n.content {\n  background-color: teal;\n  padding: 100px;\n  font-size: 50px;\n}\n.content:nth-child(2) {\n  background-color: #adca88;\n}\n.content:nth-child(3) {\n  background-color: #d68d88;\n}\n\n@media (min-width: 480px) {\n  /******************************************************************\n\n  Stylesheet: 480px以上(スマホの横向き)のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 600px) {\n  /******************************************************************\n\n  Stylesheet: 600px以上のタブレットやモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 960px) {\n  /******************************************************************\n\n  Stylesheet: 960px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 1280px) {\n  /******************************************************************\n\n  Stylesheet: 1280px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {\n  /******************************************************************\n\n  Stylesheet: Retinaディスプレイで適用\n\n  ******************************************************************/\n  /* \n\n  EXAMPLE \n  .icon {\n  \tbackground: url(images/test@2x.png) no-repeat;\n  \tbackground-size: 24px 24px;\n  }\n\n  */\n}\n@media print {\n  /******************************************************************\n\n  Stylesheet: プリンタのみに適用\n\n  ******************************************************************/\n}", "",{"version":3,"sources":["webpack://./style.scss","webpack://./breakpoints/_base.scss","webpack://./breakpoints/_480up.scss","webpack://./breakpoints/_600up.scss","webpack://./breakpoints/_960up.scss","webpack://./breakpoints/_1280up.scss","webpack://./breakpoints/_2x.scss","webpack://./breakpoints/_print.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;;;kEAAA;AAMA;EACE,2BAAA;EACA,+DAAA;EACA,gBAAA;EACA,kBAAA;ADEF;ACCA;EAEE,uCAAA;ADAF;;ACGA;EACE,SAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;ADAF;;ACGA;EACE,yBAAA;ADAF;;ACGA;EACE,aAAA;EACA,gBAAA;ADAF;;ACMA;EACE,sBAAA;EACA,cAAA;EACA,eAAA;ADHF;ACKE;EACE,yBAAA;ADHJ;ACKE;EACE,yBAAA;ADHJ;;AAvCA;EEJA;;;;oEAAA;AFmDA;AA3CA;EGRA;;;;oEAAA;AH0DA;AA9CA;EIZA;;;;oEAAA;AJiEA;AAjDA;EKhBA;;;;oEAAA;ALwEA;AApDA;EMpBA;;;;oEAAA;EAMA;;;;;;;;GAAA;ANkFA;AA/DA;EOzBA;;;;oEAAA;AP+FA","sourcesContent":["@charset \"UTF-8\";\n@import url(\"./vendors/modern-normalized.css\");\n/******************************************************************\n\nStylesheet: ベーススタイル\n\n******************************************************************/\n@font-face {\n  font-family: \"Roboto-light\";\n  src: url(\"../../fonts/Roboto/Roboto-light.ttf\") format(\"truetype\");\n  font-weight: 600;\n  font-style: normal;\n}\nbody {\n  font-family: \"Roboto-light\", sans-serif;\n}\n\n#container {\n  margin: 0;\n  padding: 0;\n  text-align: center;\n  background-color: #b6e4e4;\n}\n\n#menu-area {\n  background-color: #ca8888;\n}\n\n#landing-area {\n  height: 100vh;\n  font-size: 100px;\n}\n\n.content {\n  background-color: teal;\n  padding: 100px;\n  font-size: 50px;\n}\n.content:nth-child(2) {\n  background-color: #adca88;\n}\n.content:nth-child(3) {\n  background-color: #d68d88;\n}\n\n@media (min-width: 480px) {\n  /******************************************************************\n\n  Stylesheet: 480px以上(スマホの横向き)のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 600px) {\n  /******************************************************************\n\n  Stylesheet: 600px以上のタブレットやモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 960px) {\n  /******************************************************************\n\n  Stylesheet: 960px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-width: 1280px) {\n  /******************************************************************\n\n  Stylesheet: 1280px以上のモニタで適用\n\n  ******************************************************************/\n}\n@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {\n  /******************************************************************\n\n  Stylesheet: Retinaディスプレイで適用\n\n  ******************************************************************/\n  /* \n\n  EXAMPLE \n  .icon {\n  \tbackground: url(images/test@2x.png) no-repeat;\n  \tbackground-size: 24px 24px;\n  }\n\n  */\n}\n@media print {\n  /******************************************************************\n\n  Stylesheet: プリンタのみに適用\n\n  ******************************************************************/\n}",null,null,null,null,null,null,null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -30677,26 +30724,6 @@ module.exports = function (list, options) {
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "0cea39826bd36bbfe330.ttf";
-
-/***/ }),
-
-/***/ "./src/images/blue.jpg":
-/*!*****************************!*\
-  !*** ./src/images/blue.jpg ***!
-  \*****************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "3eb11f75ca62ec9dbe3b.jpg";
-
-/***/ }),
-
-/***/ "./src/images/yellowgreen.jpg":
-/*!************************************!*\
-  !*** ./src/images/yellowgreen.jpg ***!
-  \************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "9c17a6b5d9f6508e6781.jpg";
 
 /***/ })
 

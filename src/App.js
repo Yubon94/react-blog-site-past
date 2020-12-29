@@ -1,25 +1,24 @@
 import React from "react";
 import "./styles/style.scss";
-import Icon from "./images/blue.jpg";
 import { Profile } from "./components/Profile.jsx";
 import { Works } from "./components/Works.jsx";
 import { Social } from "./components/Social.jsx";
 
 export const App = () => {
-  return(
+  return (
     <>
       <div id="container">
         {/* menu area */}
         <div id="menu-area">
           <div className="icon">icon</div>
           <div className="menu-box">
-            <div className="menu-item">Profile</div>
-            <div className="menu-item">Works</div>
-            <div className="menu-item">Social</div>
+            <span className="menu-item">Profile</span>
+            <span className="menu-item">Works</span>
+            <span className="menu-item">Social</span>
           </div>
         </div>
-        <div className="imageSample">
-          <img src={Icon} />
+        <div id="landing-area">
+            <span>Landing</span>
         </div>
         {/* {content area} */}
         <div id="content-area">
