@@ -1,32 +1,50 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles/style.scss";
+import { Home } from "./components/Home.jsx";
 import { Profile } from "./components/Profile.jsx";
 import { Works } from "./components/Works.jsx";
 import { Social } from "./components/Social.jsx";
 
 export const App = () => {
   return (
-    <>
+    <Router>
       <div id="container">
         {/* menu area */}
-        <section id="menu-area">
-          <div className="icon">icon</div>
-          <div className="menu-box">
-            <span className="menu-item">Profile</span>
-            <span className="menu-item">Works</span>
-            <span className="menu-item">Social</span>
+        <nav id="menu-area">
+          <div className="icon">
+            <Link to="/">Home</Link>
           </div>
-        </section>
-        <section id="landing-area">
-            <div className="landing-title">Welcome to My Page</div>
-        </section>
+          <ul className="menu-box">
+            <li className="menu-item">
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/works">Works</Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/social">Social</Link>
+            </li>
+          </ul>
+        </nav>
         {/* {content area} */}
         <section id="content-area">
-          <Profile />
-          <Works />
-          <Social />
+          <Switch>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/works">
+              <Works />
+            </Route>
+            <Route path="/social">
+              <Social />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </section>
       </div>
-    </>
+    </Router>
   );
 };
