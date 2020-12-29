@@ -9,23 +9,23 @@ export const App = () => {
     <>
       <div id="container">
         {/* menu area */}
-        <div id="menu-area">
+        <section id="menu-area">
           <div className="icon">icon</div>
           <div className="menu-box">
             <span className="menu-item">Profile</span>
             <span className="menu-item">Works</span>
             <span className="menu-item">Social</span>
           </div>
-        </div>
-        <div id="landing-area">
-            <span>Landing</span>
-        </div>
+        </section>
+        <section id="landing-area">
+            <div className="landing-title">Welcome to My Page</div>
+        </section>
         {/* {content area} */}
-        <div id="content-area">
+        <section id="content-area">
           <Profile />
           <Works />
           <Social />
-        </div>
+        </section>
       </div>
     </>
   );
