@@ -26,6 +26,11 @@ a {
   text-decoration: none;
   color: black;
 }
+nav#menu-area{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 #menu-area {
   background-color: rgb(202, 136, 136);
   // margin: 18px;
@@ -49,6 +54,7 @@ a {
 #content-area {
   // background-color: rgb(173, 202, 136);
   & .landing-page{
+    padding: 16px;
     height: 100vh;
     font-size: 100px;
     & .landing-title {
